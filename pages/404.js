@@ -1,5 +1,11 @@
+import Layout from "../components/layout";
+
 const NotFound = () => {
-    return <p>Error 404: page not found.</p>;
+    return (
+        <Layout>
+            <p>Error 404: page not found.</p>
+        </Layout>
+    );
 };
 
 export default NotFound;
