@@ -4,7 +4,7 @@
 
 ## Libraries
 
-axios, sass.
+next, axios, sass, @next/font.
 
 ## Start server
 
