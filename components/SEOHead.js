@@ -9,6 +9,7 @@ export default function SEOHead({ pageTitle, pageDesc }) {
                 name="viewport"
                 content="initial-scale=1.0, width=device-width"
             />
+            <link rel="icon" href="./static/nextjs-original.ico" />
         </Head>
     );
 }

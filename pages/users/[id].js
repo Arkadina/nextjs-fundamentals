@@ -1,11 +1,16 @@
 import Layout from "../../components/layout";
 import { useRouter } from "next/router";
 import axios from "axios";
+import SEOHead from "../../components/SEOHead";
 
 export default function User({ user }) {
     console.log(user);
     return (
         <Layout>
+            <SEOHead
+                pageTitle={`NextJS | ${user[0].login}`}
+                pageDesc="User page"
+            />
             <p>User</p>
         </Layout>
     );
@@ -24,7 +29,7 @@ export async function getStaticPaths() {
         },
     }));
 
-    console.log(paths)
+    console.log(paths);
 
     return {
         paths,
@@ -44,6 +49,5 @@ export async function getStaticProps({ params }) {
         },
     };
 }
-
 
 // Server-side Rendering: getServerSideProps()

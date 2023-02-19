@@ -1,12 +1,21 @@
 .headerTop {
     height: 20px;
-    background-color: rgb(193, 101, 255);
+    background-color: #5a5a5a;
 }
 
 .headerDown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: 60px;
     background-color: #fff;
     color: #000;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 0 30px;
+    
+    ul {
+        list-style: none;
+    }
 
     .headerDownLogo {
         display: flex;

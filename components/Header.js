@@ -1,6 +1,7 @@
 import styles from "./Header.module.scss";
 import Image from "next/image";
-import nextLOGO from "../public/nextjs-original.svg";
+import nextjsIcon from "../public/nextjs-original.svg";
+import Link from "next/link";
 
 function Header() {
     return (
@@ -8,15 +9,22 @@ function Header() {
             <div className={styles.headerTop}></div>
             <div className={styles.headerDown}>
                 <div className={styles.headerDownLogo}>
-                    <p>NextJS Fundamentals</p>
+                    <p>NextJS</p>
                     <Image
-                        src={nextLOGO}
+                        src={nextjsIcon}
                         alt="nextjs logo"
                         priority
-                        width={25}
-                        height={25}
+                        width={20}
+                        height={20}
                     />
                 </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <Link href="/users">Users</Link>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     );

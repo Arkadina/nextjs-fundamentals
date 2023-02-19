@@ -1,5 +1,8 @@
 .App {
-    background-color: #1a191a;
     width: 100%;
     height: 100vh;
+}
+
+.main {
+    padding: 60px 30px;
 }
