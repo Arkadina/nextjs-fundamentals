@@ -21,10 +21,39 @@ function Header() {
                 <nav>
                     <ul>
                         <li>
-                            <Link href="/users">Users</Link>
+                            <Link href="/" className={styles.link}>
+                                Index
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/users" className={styles.link}>
+                                Users
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/users" className={styles.link}>
+                                Not Found
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/about" className={styles.link}>
+                                About
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/" className={styles.link}>
+                                Users
+                            </Link>
                         </li>
                     </ul>
                 </nav>
+                <div className={styles.inputGroup}>
+                    <div>
+                        users/
+                        <input type="text" />
+                    </div>
+                    <button>Buscar</button>
+                </div>
             </div>
         </div>
     );

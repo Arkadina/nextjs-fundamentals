@@ -12,9 +12,26 @@
     color: #000;
     border-bottom: 1px solid #e7e7e7;
     padding: 0 30px;
-    
+
     ul {
         list-style: none;
+
+        li {
+            display: inline-block;
+        }
+
+        li:not(:last-of-type) {
+            margin-right: 20px;
+        }
+
+        .link {
+            text-decoration: none;
+            color: #5a5a5a;
+        }
+
+        .link:hover {
+            font-weight: 600;
+        }
     }
 
     .headerDownLogo {
@@ -25,6 +42,35 @@
         p {
             margin-right: 8px;
             font-weight: 700;
+        }
+    }
+
+    .inputGroup {
+        display: flex;
+        background-color: #5a5a5a;
+        padding: 10px 15px;
+        border-radius: 8px;
+        color: #fff;
+
+        input {
+            border-radius: 4px;
+            border: none;
+            background-color: #7c7c7c;
+            margin: 0 10px;
+            width: 40px;
+            outline: none;
+            color: #fff;
+            padding-left: 5px;
+        }
+
+        button {
+            border: none;
+            color: #7c7c7c;
+            font-weight: 600;
+            background-color: #ffffff;
+            padding: 0 8px;
+            border-radius: 2px;
+            font-size: 12px;
         }
     }
 }
