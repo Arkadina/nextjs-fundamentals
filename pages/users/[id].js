@@ -3,15 +3,23 @@ import { useRouter } from "next/router";
 import axios from "axios";
 import SEOHead from "../../components/SEOHead";
 
+import styles from "./users.module.scss";
+
 export default function User({ user }) {
-    console.log(user);
+    const router = useRouter();
+    console.log(router);
+    console.log(...user);
     return (
         <Layout>
             <SEOHead
                 pageTitle={`NextJS | ${user[0] ? user[0].login : "User"} `}
                 pageDesc="User page"
             />
-            <p>User</p>
+            <div className={styles.container}>
+                <h1>You are at {router.asPath}.</h1>
+                <p></p>
+                <p>User: {user[0] ? user[0].login : "not found 🙄"}.</p>
+            </div>
         </Layout>
     );
 }

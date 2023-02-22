@@ -1,10 +1,10 @@
 # NextJS Fundamentals
 
-<img src="" />
+<img src="https://i.imgur.com/pZ1ddxX.png" />
 
 ## Libraries
 
-next, axios, sass, @next/font.
+next, axios & sass.
 
 ## Start server
 
