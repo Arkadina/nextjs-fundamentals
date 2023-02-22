@@ -1,4 +1,4 @@
-import Layout from "../../components/layout";
+import Layout from "../../components/Layout";
 import { useRouter } from "next/router";
 import axios from "axios";
 import SEOHead from "../../components/SEOHead";
@@ -8,7 +8,7 @@ export default function User({ user }) {
     return (
         <Layout>
             <SEOHead
-                pageTitle={`NextJS | ${user[0].login}`}
+                pageTitle={`NextJS | ${user[0] ? user[0].login : "User"} `}
                 pageDesc="User page"
             />
             <p>User</p>

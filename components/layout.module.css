@@ -1,13 +1,15 @@
 .App {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .main {
     display: flex;
     justify-content: flex-start;
-    padding: 30px 30px;
-    height: 100vh;
+    flex-direction: column;
+    padding: 30px 80px;
+    height: 100%;
 }

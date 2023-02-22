@@ -1,11 +1,16 @@
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import SEOHead from "../components/SEOHead";
+
+import styles from "./about.module.scss";
 
 function About() {
     return (
         <Layout>
             <SEOHead pageTitle="NextJS | About" pageDesc="About page" />
-            <p>Welcome to about page!</p>
+            <div className={styles.container}>
+                <h1>About </h1>
+                <p>You are at /about.</p>
+            </div>
         </Layout>
     );
 }

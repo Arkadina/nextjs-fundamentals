@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import SEOHead from "../components/SEOHead";
 import styles from "./404.module.scss";
 
